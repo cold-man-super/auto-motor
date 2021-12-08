@@ -27,11 +27,9 @@ while(True):
 
     p=find_max(blobs)
     if p:
-
-
-        usart.write("#f11*")#output_str="[%d,%d]" % (max_blob.cx(),max_blob.cy())
+        usart.write("f1")#output_str="[%d,%d]" % (max_blob.cx(),max_blob.cy())
         print("x=%d"%int(p))
-        usart.write("#X%d*"%int(p))
+        usart.write("X%d"%int(p))
     else:
         print('not found!')
-        usart.write("#f00*")
+        usart.write("f0")
