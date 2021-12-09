@@ -70,35 +70,35 @@ def main(anchors, labels = None, model_addr="/sd/m.kmodel", sensor_window=(224, 
                     if a=='1':
                         if obj.value()>0.8:
                             print("1")
-                            uart_A.write("#X%d*"%int(1))
+                            uart_A.write("X%d"%int(1))
                     if a=='2':
                         if obj.value()>0.8:
                             print("2")
-                            uart_A.write("#X%d*"%int(2))
+                            uart_A.write("X%d"%int(2))
                     if a=='3':
                         if obj.value()>0.5:
                             print("3")
-                            uart_A.write("#X%d*"%int(3))
+                            uart_A.write("X%d"%int(3))
                     if a=='4':
                         if obj.value()>0.5:
                             print("4")
-                            uart_A.write("#X%d*"%int(4))
+                            uart_A.write("X%d"%int(4))
                     if a=='5':
                         if obj.value()>0.5:
                             print("5")
-                            uart_A.write("#X%d*"%int(5))
+                            uart_A.write("X%d"%int(5))
                     if a=='6':
                         if obj.value()>0.5:
                             print("6")
-                            uart_A.write("#X%d*"%int(6))
+                            uart_A.write("X%d"%int(6))
                     if a=='7':
                         if obj.value()>0.5:
                             print("7")
-                            uart_A.write("#X%d*"%int(7))
+                            uart_A.write("X%d"%int(7))
                     if a=='8':
                         if obj.value()>0.5:
                             print("8")
-                            uart_A.write("#X%d*"%int(8))
+                            uart_A.write("X%d"%int(8))
             img.draw_string(0, 200, "t:%dms" %(t), scale=2, color=(255, 0, 0))
             lcd.display(img)
     except Exception as e:
